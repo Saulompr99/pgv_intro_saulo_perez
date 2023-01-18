@@ -15,9 +15,14 @@ public class JavaApplication5 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        for (int i = args[0].length()-1; i >= 0; i--) {
-            System.out.print(args[0].charAt(i));
-        }
+        System.out.println(invertir(args[0]));
     }
     
+    public static String invertir(String string) {
+        String aux = "";
+        for (int i = string.length() - 1; i >= 0; i--) {
+            aux += (string.charAt(i));
+        }
+        return aux;
+    }
 }
